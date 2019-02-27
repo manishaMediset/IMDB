@@ -4,57 +4,66 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<title>Uri Review</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<title>Uri Review</title>
-<style>
-.pb-cmnt-container {
-        font-family: Lato;
-        margin-top: 100px;
-    }
-
-    .pb-cmnt-textarea {
-        resize: none;
-        padding: 20px;
-        height: 130px;
-        width: 100%;
-        border: 1px solid #F2F2F2;
-    }
-</style>
 </head>
 <body>
+  
 <div class="container">
-<div class="jumbotron  "  >
-<div class = "container-fluid bg-3 text-center">
-  <div class = "row">
-      <div class="col-sm-6">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/VVY3do673Zc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
- <div class="col-sm-6">
-       <ul>
-       <li>Writter:gfhhghhgf</li></ul>
-</div>
-</div>
-</div>
+  <div class="jumbotron">
+   <div class = "page-header"><h2>WELCOME</h2></div>
+ <div class="row">
+ <div class="col-sm-6" style="background-color:lavender;">
+	<iframe width="440" height="300" src="https://www.youtube.com/embed/Cg8sbRFS3zU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe></div>
 
-</div>
-</div>
-<div class="container pb-cmnt-container">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="panel panel-info">
-                <div class="panel-body">
-                    <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea"></textarea>
-                    <form>
-                        
-                        <button class="btn btn-primary pull-right" type="button">Share</button>
-                    </form>
-                </div>
-            </div>
+ <div class="col-sm-6" style="background-color:lavender;"><h3><b> Movie:Uri</b></h3>
+ <h5><b><p class="text-primary">DERECTOR:</b></p></h5>Aditya Dhar
+ <h5><b><p class="text-primary">HERO:</b></p></h5>Vicky Kaushal
+<h5><b> <p class="text-primary">HEROINE:</b></p></h5>Yami Gautam
+ <h5><b> <p class="text-primary">MUSIC:</b></p></h5>Shashwat Sachdev
+ </div>
+ </div>
+  </div>
+  </div>
+  </div></div>
+  <h2>Rating</h2>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span> 
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			    <span class="fa fa-star"></span><br>
+			   <!--   <h3>Comments :</h3>
+			    <textarea rows="4" cols="50" name="comment"></textarea>  -->
+			    
+			    <label for="comment" class="required"><h3>Write  Comment Here</h3></label>
+ 
+  <input type="text"  data-toggle="modal" data-target="#myModal"></input> 
+  
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <div class="form-group">
+  <p>Please Login First</p>
+<form action="Servlet" method="post">
+    <label for="email" class="required">Email address:</label>
+    <input type="email" class="form-control"  placeholder="Enter your mail here" name="email"  class="required">
+    
+   <label for="pwd" class="required">Password:</label>
+    <input type="password" class="form-control"  placeholder="Enter your password here"  name="password"  class="required">
+    <input type ="submit" value="submit">
+    </form>
         </div>
-    </div>
-</div>
+      </div>
+ 
 </body>
+
 </html>
+    
