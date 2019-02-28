@@ -13,16 +13,16 @@ import javax.servlet.http.HttpServletResponse;
 import com.imdb.dao.LoginDao;
 
 /**
- * Servlet implementation class LoginValidation
+ * Servlet implementation class F2Validation
  */
-@WebServlet("/LoginValidation")
-public class LoginValidation extends HttpServlet {
+@WebServlet("/F2Validation")
+public class F2Validation extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginValidation() {
+    public F2Validation() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,12 +32,13 @@ public class LoginValidation extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 		response.setContentType("text/html");
 		 PrintWriter out = response.getWriter();
 		    String name = request.getParameter("username");
 		    String pwd = request.getParameter("password");
 		    if(LoginDao.validate(name, pwd)){  
-		        RequestDispatcher rd=request.getRequestDispatcher("Home.html");  
+		        RequestDispatcher rd=request.getRequestDispatcher("F2.jsp");  
 		        rd.forward(request,response);  
 		    }  
 		    else{  
@@ -47,13 +48,8 @@ public class LoginValidation extends HttpServlet {
 		    }  
 		          
 		    out.close();  
-		    }  
-		    
-		
-
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		    }  //response.getWriter().append("Served at: ").append(request.getContextPath());
 	
-
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

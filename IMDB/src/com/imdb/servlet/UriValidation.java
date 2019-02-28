@@ -13,16 +13,16 @@ import javax.servlet.http.HttpServletResponse;
 import com.imdb.dao.LoginDao;
 
 /**
- * Servlet implementation class LoginValidation
+ * Servlet implementation class UriValidation
  */
-@WebServlet("/LoginValidation")
-public class LoginValidation extends HttpServlet {
+@WebServlet("/UriValidation")
+public class UriValidation extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginValidation() {
+    public UriValidation() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,7 +37,7 @@ public class LoginValidation extends HttpServlet {
 		    String name = request.getParameter("username");
 		    String pwd = request.getParameter("password");
 		    if(LoginDao.validate(name, pwd)){  
-		        RequestDispatcher rd=request.getRequestDispatcher("Home.html");  
+		        RequestDispatcher rd=request.getRequestDispatcher("Uri.jsp");  
 		        rd.forward(request,response);  
 		    }  
 		    else{  
@@ -49,10 +49,7 @@ public class LoginValidation extends HttpServlet {
 		    out.close();  
 		    }  
 		    
-		
-
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-	
 
 
 	/**
